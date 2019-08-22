@@ -1,19 +1,12 @@
 <nav class="navbar navbar-inverse">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<a href="#" class="navbar-brand">Spitter</a>
+			<a routerLink="/" class="navbar-brand">Spitter</a>
 		</div>
 		<div class="colapse navbar-collapse">
-			<ul class="nav navbar-nav">
-				<li><a href="/ViewAccount">View Account</a></li>
-				<li><a href="/AllSpitters">View all Spitters</a></li>
-				<li><a href="/UpdateAccount">Update Account</a></li>
-				<li><a href="/DeleteAccount">Delete Account</a></li>
-				<li><a href="/Spittles">Spittles</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-user"></span> Account </a></li>
-			</ul>
 			<ul class="nav navbar-nav navbar-right">
-      			<li><a href="/Register"><span class="glyphicon glyphicon-log-in"></span> Sign Up</a></li>
+				<li><a routerLink="/Account"><span class="glyphicon glyphicon-user"></span> Account </a></li>  
+				<li><a routerLink="/Register" data-toggle="modal" data-target="#modalRegister"><span class="glyphicon glyphicon-log-in"></span> Sign Up</a></li>
     		</ul>
 		</div>
 	</div>
