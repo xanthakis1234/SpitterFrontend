@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { Routes, RouterModule} from '@angular/router';
 import { AllSpittersComponent } from './all-spitters-component/all-spitters.component';
-import { SpittlesComponent } from './spittles/spittles.component';
+import { SpittlesComponent } from './all-spitters-component/spittles/spittles.component';
 import { ViewAccountComponent } from './view-account/view-account.component';
 import { UpdateAccountComponent } from './update-account/update-account.component';
 import { DeleteAccountComponent } from './delete-account/delete-account.component';
 import { RegisterComponent } from './register/register.component';
+import { SpittersComponent } from './all-spitters-component/spitters/spitters.component';
+import { SpittleComponent } from './all-spitters-component/spittle/spittle.component';
 
 const appRoutes: Routes =[
 	{ path: 'AllSpitters', component:AllSpittersComponent},
@@ -29,7 +31,9 @@ const appRoutes: Routes =[
 	ViewAccountComponent,
 	UpdateAccountComponent,
 	DeleteAccountComponent,
-	RegisterComponent
+	RegisterComponent,
+	SpittersComponent,
+	SpittleComponent
   ],
   imports: [
 	BrowserModule, 
