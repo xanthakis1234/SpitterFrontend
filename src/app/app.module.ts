@@ -13,6 +13,7 @@ import { RegisterComponent } from './register/register.component';
 import { SpittersComponent } from './all-spitters-component/spitters/spitters.component';
 import { SpittleComponent } from './all-spitters-component/spittle/spittle.component';
 import { AccountComponent } from './account/account.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const appRoutes: Routes =[
 	{ path: '', component:AllSpittersComponent},
@@ -39,7 +40,8 @@ const appRoutes: Routes =[
   imports: [
 	BrowserModule, 
 	RouterModule.forRoot(appRoutes),
-	ReactiveFormsModule
+	ReactiveFormsModule,
+	NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

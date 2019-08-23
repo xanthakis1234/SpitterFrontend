@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { DeleteAccountComponent } from 'src/app/account/delete-account/delete-account.component';
 
 @Component({
   selector: 'app-account',
@@ -9,7 +11,9 @@ export class AccountComponent implements OnInit {
   public show:boolean = false;
   public buttonName:any = 'Show';
   
-  constructor() {}
+  constructor(
+    private modalService: NgbModal
+  ) {}
 
   ngOnInit(){}
 
@@ -20,5 +24,15 @@ export class AccountComponent implements OnInit {
       this.buttonName = "Hide";
     else
       this.buttonName = "Show"; 
+  }
+
+  openFormModal() {
+    const modalRef = this.modalService.open(DeleteAccountComponent);
+    
+    modalRef.result.then((result) => {
+      console.log(result);
+    }).catch((error) => {
+      console.log(error);
+    });
   }
 }
