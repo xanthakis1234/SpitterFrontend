@@ -15,13 +15,11 @@ import { SpittleComponent } from './all-spitters-component/spittle/spittle.compo
 import { AccountComponent } from './account/account.component';
 
 const appRoutes: Routes =[
-	{ path: 'AllSpitters', component:AllSpittersComponent},
-	{ path: 'Spittles', component:SpittlesComponent},
-	{ path: 'ViewAccount', component:ViewAccountComponent},
-	{ path: 'UpdateAccount', component:UpdateAccountComponent},
-	{ path: 'DeleteAccount', component:DeleteAccountComponent},
-	{ path: 'Register', component:RegisterComponent},
-	{ path: 'Account', component:AccountComponent},
+	{ path: '', component:AllSpittersComponent},
+	{ path: 'spittles', component:SpittlesComponent},
+	{ path: 'viewAccount', component:ViewAccountComponent},
+	{ path: 'register', component:RegisterComponent},
+	{ path: 'account', component:AccountComponent},
 ];
 
 @NgModule({

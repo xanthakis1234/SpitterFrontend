@@ -1,4 +1,46 @@
-<a routerLink="/ViewAccount">View Account</a>
-<a routerLink="/AllSpitters">View all Spitters</a>
-<a routerLink="/UpdateAccount">Update Account</a>
-<a routerLink="/DeleteAccount">Delete Account</a>
+<div class="container">
+        <h2 class="text-center"><span style="color:whitesmoke;font-weight:bold">Accounts</span></h2>
+        <table class="table">
+            <thead class="p-3 mb-2 bg-info text-white">
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="p-3 mb-2 bg-info text-white">
+                <tr>
+                    <td>firstName</td>
+
+                    <td>lastname</td>
+
+                    <td>Username</td>
+
+                    <td>Password</td>
+                    <td><button type="button" class="btn btn-primary" (click)="toggle()">
+                            Update
+                        </button>&nbsp;&nbsp;<app-delete-account></app-delete-account>
+                    </td>
+                </tr>
+                <tr>
+                    <td>firstName</td>
+
+                    <td>lastname</td>
+
+                    <td>Username</td>
+
+                    <td>Password</td>
+                    <!--<td><app-update-account></app-update-account>&nbsp;&nbsp;<app-delete-account></app-delete-account></td>-->
+                </tr>
+
+
+            </tbody>
+        </table>
+        <div class="container" *ngIf="show">
+            <div>
+                <app-update-account></app-update-account>
+            </div>
+        </div>
+    </div>

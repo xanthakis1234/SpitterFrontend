@@ -20,7 +20,7 @@
 
         <td>Password</td>
 
-        <td><app-spittle></app-spittle></td>
+        <td><button type="button" class="btn btn-primary" (click)="toggle()">Spittles</button></td>
 
       </tr>
       <tr>
@@ -33,9 +33,15 @@
   
           <td>Password</td>
   
-          <td><button type="button" class="btn btn-primary">Spittles</button></td>
+          <td><button type="button" class="btn btn-primary" (click)="toggle()">Spittles</button>
+          </td>
   
         </tr>
     </tbody>
   </table>
-</div>
+
+  </div>
+<div class="container" *ngIf="show">
+    <div>
+        <app-spittles></app-spittles>
+    </div>
