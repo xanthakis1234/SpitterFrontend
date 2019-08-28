@@ -10,16 +10,11 @@
       </tr>
     </thead>
     <tbody class="p-3 mb-2 bg-info text-white">
-      <tr>
-
-        <td>Firstname</td>
-
-        <td>Lastname</td>
-
-        <td>Username</td>
-
-        <td>Password</td>
-
+      <tr *ngFor=" let spitter of spitters">
+          <td>{{spitter.firstname}}</td>
+          <td>{{spitter.lastname}}</td>
+          <td>{{spitter.username}}</td>
+          <td>{{spitter.password}}</td>
         <td><button type="button" class="btn btn-primary" (click)="toggle()">Spittles</button></td>
 
       </tr>

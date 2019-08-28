@@ -14,6 +14,7 @@ import { SpittersComponent } from './all-spitters-component/spitters/spitters.co
 import { SpittleComponent } from './all-spitters-component/spittle/spittle.component';
 import { AccountComponent } from './account/account.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes =[
 	{ path: '', component:AllSpittersComponent},
@@ -41,7 +42,8 @@ const appRoutes: Routes =[
 	BrowserModule, 
 	RouterModule.forRoot(appRoutes),
 	ReactiveFormsModule,
-	NgbModule
+	NgbModule,
+	HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
